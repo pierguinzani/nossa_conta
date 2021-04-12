@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:nossaconta/pages/fingers_page.dart';
 import 'package:nossaconta/pages/home_page.dart';
+import 'package:nossaconta/pages/multitap.dart';
 
 void main() => runApp(MyApp());
 
@@ -11,7 +11,14 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Nossa Conta',
       debugShowCheckedModeBanner: false,
-      home: Multitap(),
+      //home: MultiTap(),
+      initialRoute: '/',
+      routes: {
+        // When navigating to the "/" route, build the FirstScreen widget.
+        '/': (context) => HomePage(),
+        // When navigating to the "/second" route, build the SecondScreen widget.
+        '/multitap': (context) => MultiTap(),
+      },
     );
   }
 }

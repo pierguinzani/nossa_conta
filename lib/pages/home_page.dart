@@ -127,12 +127,16 @@ class HomePageState extends State<HomePage> {
       width: double.infinity,
       child: RaisedButton(
         elevation: 5.0,
-        onPressed: () => print('Login Button Pressed'),
+        // onPressed: () => print('Login Button Pressed'),
         padding: EdgeInsets.all(15.0),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(30.0),
         ),
         color: Colors.white,
+        onPressed: () {
+          // Navigate to the second screen using a named route.
+          Navigator.pushNamed(context, '/multitap');
+        },
         child: Text(
           'SORTEAR',
           style: TextStyle(
@@ -197,13 +201,9 @@ class HomePageState extends State<HomePage> {
                         ),
                       ),
                       SizedBox(height: 30.0),
-                      
-
                       qtdPessoas(),
-                      
                       valorConta(),
                       taxas(),
-
                       sortear(),
                     ],
                   ),

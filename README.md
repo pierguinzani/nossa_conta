@@ -1,9 +1,8 @@
 # Nossa Conta
 
-# [![Main logo][]][flutter.dev]
-
-[Main logo]: https://www.oversodoinverso.com.br/wp-content/uploads/2020/08/template.png
-[flutter.dev]: https://flutter.dev
+<p align="center">
+  <img src="https://www.oversodoinverso.com.br/wp-content/uploads/2020/08/template.png" />
+</p>
 
 
 Nossa Conta é um aplicativo desenvolvido para a disciplina de desenvolvimento de aplicações móveis em Flutter, nele o usuário pode dividir a conta entre amigos, familiares ou qualquer grupo de pessoas. 
